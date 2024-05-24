@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assign Role</title>
+    <link rel="stylesheet" href="../css/assign.css">
+</head>
+<body>
+    <div class="container">
+        <button id="openModalBtn">Assign Role</button>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModalBtn">&times;</span>
+            <h2>Assign this role</h2>
+            <p>Select one or multiple employees to assign to this role: <strong>Senior Design Lead</strong></p>
+            <input type="text" id="searchInput" placeholder="Search for an individual or team...">
+            <ul id="employeeList">
+                <li data-role="Product Designer, Integrations">Jennifer Lopez</li>
+                <li data-role="Developer Relations, Payments">Tassy Omaha</li>
+                <li data-role="Backend Developer, Payments">Eneto Winner</li>
+                <li data-role="Technical Specialist, Enterprise">Jone Mena</li>
+                <li data-role="Product Manager, Dashboard">Kate Magarmay</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="../script/assign.js"></script>
+</body>
+</html>

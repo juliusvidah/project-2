@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo"><img src="../img/image 4.svg" alt=""> Aerten</div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="../views/roles.html">Roles</a></li>
+                    <li class="active"><a href="../views/index.html"></a>
+  <div class="dropdown">
+    <a onclick="toggleDropdown()" class="dropbtn">Employee</a>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="../views/index.html">All Employees</a>
+      <a href="#">Recent hires</a>
+    </div>
+  </div></li>
+                    <li><a href="#">Payroll</a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+    
+            <header class="top-bar">
+                    <input type="text" placeholder="Search Anything here">
+                    <img src="../img/Actions.png" alt="">
+                    <img src="../img/Dropdown.png" alt="">
+            </header>
+            <section class="employee-section">
+                <div class="header">
+                    <h1>Employees <img src="../img/q.png" alt=""><img src="../img/Badge.png" alt=""></h1>
+              <div class="ep">
+                <img src="../img/ep.png" alt="">
+                <img src="../img/Button.svg" alt="">
+</div>
+                </div>
+                       <div class="tabs">
+                            <button>All Employees</button>
+                            <button>Teams</button>
+                            <button>Roles</button>
+                        </div>
+                <div class="search-bar">
+                    <input id="searchField" type="text"  placeholder="Search Employee by name, role, ID or any related keywords">
+
+                    <img src="../img/juls1.png" alt="">
+                    <img src="../img/juls.png" alt="">
+                </div>
+                <table class="employee-table">
+                    <thead>
+                        <tr>
+                            <th><img src="../img/dot/Checkbox.png" alt=""> Name</th>
+                            <th>Employee ID</th>
+                            <th>Role</th>
+                            <th>Status</th>
+                            <th>Teams</th>
+                        </tr>
+                    </thead>
+                    <tbody id="employee-tbody">
+                        <tr>
+                            <td><img src="../img/dot/Checkbox.png" alt=""><img src="../img/tanner/Avatar.png" alt="Avatar"> Tanner Finsha <br><span>Tannerfinsha@gmail.com</span></td>
+                            <td>#23456GHJY76</td>
+                            <td>Product Designer <div class="subrole">Full time</div></td>
+                            <td><img class="active" src="../img/active/_Badge base.svg" alt=""></td>
+                            <td class="prodesign"><img src="../img/market/Table/Team members/Desktop/Text.svg" alt=""> <img src="../img/prodesign/Table/Team members/Desktop/Text.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/dot/Checkbox.png" alt=""><img src="../img/ew/Table/Team members/Desktop/Text.svg" alt="Avatar"> Emeto Winner <br><span>Emetowinner@gmail.com</span></td>
+                            <td>#23456GHJY76</td>
+                            <td>Product Designer <div class="subrole">Contract</div></td>
+                            <td><img class="active" src="../img/active/_Badge base.svg" alt=""></td>
+                            <td class="prodesign"><img src="../img/product/Table/Team members/Desktop/Text.svg" alt=""> <img src="../img/prodesign/Table/Team members/Desktop/Text.svg" alt=""></td>
+                        </tr>
+  <tr>
+                            <td><img src="../img/dot/Checkbox.png" alt=""><img src="../img/ew/Table/Team members/Desktop/Text.svg" alt="Avatar"> Emeto Winner <br><span>Emetowinner@gmail.com</span></td>
+                            <td>#23456GHJY76</td>
+                            <td>Product Designer <div class="subrole">Full time</div></td>
+                            <td class="prodesign"><img class="inact" src="../img/inact/Table/Team members/Desktop/Table cell/Badge/False/_Badge base.svg" alt=""></td>
+                            <td><img src="../img/product/Table/Team members/Desktop/Text.svg" alt=""></td>
+                        </tr>
+<tr>
+                              <td><img src="../img/dot/Checkbox.png" alt=""><img src="../img/jm/Table/Team members/Desktop/Text.svg" alt="Avatar">James Muriel <br><span>JamesMuriel@Aerten.finance</span></td>
+                              <td>#23456GHJY76</td>
+                              <td>Product Designer <div class="subrole">Associate</div></td>
+                              <td><img class="inact" src="../img/inact/Table/Team members/Desktop/Table cell/Badge/False/_Badge base.svg" alt=""></td>
+                              <td class="prodesign"><img src="../img/engineering/Table/Team members/Desktop/Text.svg" alt=""> <img src="../img/prodesign/Table/Team members/Desktop/Text.svg" alt=""></td>
+                          </tr>
+                        <tr>
+                              <td><img src="../img/dot/Checkbox.png" alt=""><img src="../img/ew/Table/Team members/Desktop/Text.svg" alt="Avatar"> Emeto Winner <br><span>Emetowinner@gmail.com</span></td>
+                              <td>#23456GHJY76</td>
+                              <td>Frontend Engineer <div class="subrole">Full time</div></td>
+                              <td><img class="inact" src="../img/inact/Table/Team members/Desktop/Table cell/Badge/False/_Badge base.svg" alt=""></td>
+                              <td class="prodesign"><img src="../img/product/Table/Team members/Desktop/Text.svg" alt=""> <img src="../img/prodesign/Table/Team members/Desktop/Text.svg" alt=""></td>
+                          </tr>
+                            <tr>
+                                  <td><img src="../img/dot/Checkbox.png" alt=""><img src="../img/onlineava/Table/Team members/Desktop/Avatar.svg" alt="Avatar"> Tassy Omah <br><span>Tassyonmah@gmail.com</span></td>
+                                  <td>#23456GHJY76</td>
+                                  <td>Backkend Engineer <div class="subrole">Part time</div></td>
+                                  <td><img class="active" src="../img/active/_Badge base.svg" alt=""></td>
+                                  <td class="prodesign"><img src="../img/engineering/Table/Team members/Desktop/Text.svg" alt=""> <img src="../img/prodesign/Table/Team members/Desktop/Text.svg" alt=""></td>
+                              </tr>
+      <tr>
+                                    <td><img src="../img/dot/Checkbox.png" alt=""><img src="../img/jm/Table/Team members/Desktop/Text.svg" alt="Avatar"> James Muriel<br><span>JamesMuriel@Aerten.finance</span></td>
+                                    <td>#23456GHJY76</td>
+                                  <td>Backend Engineer <div class="subrole">Part time</div></td>
+                                    <td><img class="active" src="../img/active/_Badge base.svg" alt=""></td>
+                                    <td class="prodesign"><img src="../img/product/Table/Team members/Desktop/Text.svg" alt=""> <img src="../img/prodesign/Table/Team members/Desktop/Text.svg" alt=""></td>
+                                </tr>
+                              <tr>
+                                    <td><img src="../img/dot/Checkbox.png" alt=""><img src="../img/onlineava/Table/Team members/Desktop/Avatar.svg" alt="Avatar"> Tassy Omah <br><span>Tassyonmah@gmail.com</span></td>
+                                    <td>#23456GHJY76</td>
+                                    <td>Sales specialist <div class="subrole">Part time</div></td>
+                                    <td><img class="inact" src="../img/inact/Table/Team members/Desktop/Table cell/Badge/False/_Badge base.svg" alt=""></td>
+                                    <td class="prodesign"><img src="../img/product/Table/Team members/Desktop/Text.svg" alt=""> <img src="../img/prodesign/Table/Team members/Desktop/Text.svg" alt=""></td>
+                                </tr>
+                    </tbody>
+                </table>
+                <div class="pagination">
+                    <a class="prev"><img src="../img/prev/Table/Team members/Desktop/_Button base.svg" alt=""></a>
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>...</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>10</span>
+
+                   
+                    <a class="next"><img src="../img/next/Table/Team members/Desktop/_Button base.svg" alt=""></a>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="../script/scripts.js"></script>
+</body>
+</html>

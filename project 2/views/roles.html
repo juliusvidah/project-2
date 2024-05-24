@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aerten - Roles Management</title>
+    <link rel="stylesheet" href="../css/roles.css">
+    <link rel="stylesheet" href="../views/assign.html">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo"><img class="img" src="../img/image 4.svg" alt=""> Aerten</div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Roles</a></li>
+                    <li class="active"><a href="../views/index.html">Employees</a></li>
+                    <li><a href="#">Payroll</a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <header class="top-bar">
+                                <input type="text" placeholder="Search Anything here">
+                                <img src="../img/Actions.png" alt="">
+                                <img src="../img/Dropdown.png" alt="">
+                        </header>
+                        <section class="employee-section">
+                            <div class="header">
+                                <h1>Roles <img src="../img/q.png" alt=""><img src="../img/Badge.png" alt=""></h1>
+                          <div class="ep">
+                                <a href="../views/assign.html"><img src="../img/ep.png" alt=""></a>s
+                            <img src="../img/Button.svg" alt="">
+            </div>
+                            </div>
+                                   
+                            <div class="search-bar">
+                                <input type="text"  placeholder="Search Employee by name, role, ID or any related keywords">
+                                <img src="../img/juls1.png" alt="">
+                                <img src="../img/juls.png" alt="">
+                            </div>
+            <section class="roles">
+                <div class="tabs">
+                    <button class="tab active" onclick="filterRoles('all')">All</button>
+                    <button class="tab" onclick="filterRoles('Product')">Product</button>
+                    <button class="tab" onclick="filterRoles('Engineering')">Engineering</button>
+                    <button class="tab" onclick="filterRoles('Marketing')">Marketing</button>
+                    <button class="tab" onclick="filterRoles('Recruitment')">Recruitment</button>
+                    <button class="tab" onclick="filterRoles('Sales')">Sales</button>
+                    <button class="tab" onclick="filterRoles('Customer service')">Customer service</button>
+                </div>
+                <div class="roles-list" id="rolesList">
+                </div>
+            </section>
+        </main>
+    </div>
+
+    
+
+    <script src="../script/roles.js"></script>
+</body>
+</html>
